@@ -1,0 +1,39 @@
+{
+  "RootObject": {
+    "Id": "6218de01-19b3-483e-ab89-cfe69e05baa7",
+    "Name": "traffic_cone",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "Prop",
+        "Health": 0,
+        "Model": "models/props/traffic_cone/traffic_cone.vmdl",
+        "OnPropBreak": null,
+        "OnPropTakeDamage": null,
+        "ShowCreatedComponents": false
+      },
+      {
+        "__type": "KnockOnContact",
+        "Rigidbody": {
+          "_type": "component",
+          "go": "6218de01-19b3-483e-ab89-cfe69e05baa7",
+          "component_type": "Rigidbody"
+        },
+        "Strength": 150
+      },
+      {
+        "__type": "Rigidbody",
+        "AngularDamping": 0,
+        "Gravity": true,
+        "LinearDamping": 0,
+        "Locking": {},
+        "RigidbodyFlags": 0,
+        "StartAsleep": false
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "__references": []
+}

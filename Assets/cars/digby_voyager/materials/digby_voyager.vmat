@@ -1,0 +1,20 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "shaders/car_body.shader"
+
+	Color "cars/digby_voyager/materials/digby_voyager_color.png"
+	g_flMetalness "0.000"
+	g_flRoughness "0.100"
+	g_vTint "[1.000000 1.000000 1.000000 1.000000]"
+	Mask "cars/digby_voyager/materials/digby_voyager_alpha.png"
+	Tint "cars/digby_voyager/materials/digby_voyager_tint.png"
+
+	//---- Fog ----
+	g_bFogEnabled "1"
+
+	//---- Translucent ----
+	g_flAlphaTestReference "0.500"
+	g_flAntiAliasedEdgeStrength "1.000"
+}

@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "dev_playground",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "dev_playground",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "alex.sky_hdri_001#28450"
+      ],
+      "Metadata": {
+        "SingleAssetSource": "maps/dev_playground.vmap"
+      }
+    }
+  }
+}

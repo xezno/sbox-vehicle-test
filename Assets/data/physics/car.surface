@@ -1,0 +1,20 @@
+{
+  "BaseSurface": "surfaces/metal.surface",
+  "AudioMaterial": null,
+  "Description": "",
+  "Friction": 0.8,
+  "Elasticity": 0,
+  "Density": 200,
+  "Thickness": 0,
+  "Dampening": 0,
+  "BounceThreshold": 40,
+  "ImpactEffects": {},
+  "ScrapeEffects": {
+    "RoughnessFactor": 0.25,
+    "RoughThreshold": 0.5
+  },
+  "Sounds": {},
+  "Breakables": {},
+  "Tags": null,
+  "__references": []
+}
