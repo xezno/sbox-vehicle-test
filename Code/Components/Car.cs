@@ -20,14 +20,22 @@ public sealed class Car : Component
 		_wheels = Components.GetAll<Wheel>( FindMode.EverythingInSelfAndDescendants ).ToList();
 	}
 
+	private float _currentTorque;
+
 	protected override void OnFixedUpdate()
 	{
 		float verticalInput = Input.AnalogMove.x;
-		float torque = verticalInput * Torque;
+		float targetTorque = verticalInput * Torque;
+
+		bool isBraking = (targetTorque < 0f);
+		float lerpRate = isBraking ? 5.0f : 1.0f; // Brake applies quicker
+
+		_currentTorque = _currentTorque.LerpTo( targetTorque, lerpRate * Time.Delta );
+		_currentTorque = _currentTorque.Clamp( 0, float.MaxValue );
 
 		foreach ( Wheel wheel in _wheels )
 		{
-			wheel.ApplyMotorTorque( torque );
+			wheel.ApplyMotorTorque( _currentTorque );
 		}
 	}
 }
