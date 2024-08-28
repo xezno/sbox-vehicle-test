@@ -7,6 +7,9 @@ public sealed class KnockOnContact : Component, Component.ICollisionListener
 
 	public void OnCollisionStart( Collision collision )
 	{
+		if ( !collision.Other.Collider.IsValid() )
+			return;
+
 		if ( collision.Other.Collider.Static )
 			return;
 
