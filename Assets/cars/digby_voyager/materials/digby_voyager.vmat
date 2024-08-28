@@ -6,7 +6,7 @@ Layer0
 
 	Color "cars/digby_voyager/materials/digby_voyager_color.png"
 	g_flMetalness "0.000"
-	g_flRoughness "0.100"
+	g_flRoughness "1.000"
 	g_vTint "[1.000000 1.000000 1.000000 1.000000]"
 	Mask "cars/digby_voyager/materials/digby_voyager_alpha.png"
 	Tint "cars/digby_voyager/materials/digby_voyager_tint.png"
