@@ -11,8 +11,6 @@ namespace RacingGame;
 [Icon( "camera" )]
 public sealed class OrbitCamera : Component
 {
-	[Property] public GameObject Target { get; set; }
-	[Property] public Car Car { get; set; }
 	[Group( "Reset" ), Property] public float ResetDebounce { get; set; } = 3.0f;
 	[Group( "Reset" ), Property] public float ResetLerpTime { get; set; } = 2.5f;
 	[Group( "Following" ), Property] public float Distance { get; set; } = 256f;
@@ -32,6 +30,11 @@ public sealed class OrbitCamera : Component
 	{
 		if ( Scene.IsEditor )
 			return;
+
+		if ( !Car.Local.IsValid() )
+			return;
+
+		var target = Car.Local.CameraTarget;
 
 		//
 		// Analog look
@@ -56,11 +59,11 @@ public sealed class OrbitCamera : Component
 		// Follow camera
 		//
 		{
-			var offset = _lookDir.ToRotation().Backward * Distance * Target.Transform.World.Rotation;
+			var offset = _lookDir.ToRotation().Backward * Distance * target.Transform.World.Rotation;
 			offset += Vector3.Up * Height;
 
-			var targetPosition = Target.Transform.Position + offset;
-			var targetRotation = Rotation.LookAt( Target.Transform.Position - targetPosition ).Angles();
+			var targetPosition = target.Transform.Position + offset;
+			var targetRotation = Rotation.LookAt( target.Transform.Position - targetPosition ).Angles();
 
 			Transform.Position = Vector3.Lerp( Transform.Position, targetPosition, PositionSensitivity * Time.Delta );
 			Transform.Rotation = Rotation.Lerp( Transform.Rotation, targetRotation, RotationSensitivity * Time.Delta );
