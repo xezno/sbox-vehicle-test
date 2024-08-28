@@ -8,6 +8,7 @@
   "Resources": null,
   "PackageReferences": [],
   "EditorReferences": null,
+  "IsWhitelistDisabled": true,
   "Metadata": {
     "MaxPlayers": 64,
     "MinPlayers": 1,
@@ -92,7 +93,6 @@
       ],
       "__guid": "0ef2a792-ba46-4785-9169-eb9d53f2cc21"
     },
-    "MapStartupScene": null,
-    "LaunchMode": "Normal"
+    "LaunchMode": "QuickPlay"
   }
 }
