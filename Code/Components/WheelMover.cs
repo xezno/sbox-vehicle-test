@@ -23,7 +23,7 @@ public sealed class WheelMover : Component
 
 		var groundVel = _rigidbody.Velocity;
 
-		Transform.Position = Target.GetCenter();
-		Transform.LocalRotation *= Rotation.From( groundVel.Length * Time.Delta * (ReverseRotation ? -1f : 1f) * Speed, 0, 0 );
+		WorldPosition = Target.GetCenter();
+		LocalRotation *= Rotation.From( groundVel.Length * Time.Delta * (ReverseRotation ? -1f : 1f) * Speed, 0, 0 );
 	}
 }

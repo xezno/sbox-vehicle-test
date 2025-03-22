@@ -13,8 +13,10 @@
       "EditorReferences": [
         "alex.sky_hdri_001#28450"
       ],
+      "IsStandaloneOnly": false,
       "Metadata": {
-        "SingleAssetSource": "maps/dev_playground.vmap"
+        "SingleAssetSource": "maps/dev_playground.vmap",
+        "ParentPackage": "alex.racing_game_test"
       }
     }
   }

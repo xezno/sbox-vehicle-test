@@ -11,7 +11,21 @@
 				[
 					{
 						_class = "DefaultMaterialGroup"
-						remaps = [  ]
+						remaps = 
+						[
+							{
+								from = "color.vmat"
+								to = "cars/digby_voyager/materials/digby_voyager.vmat"
+							},
+							{
+								from = "phys.vmat"
+								to = "cars/digby_voyager/materials/digby_voyager.vmat"
+							},
+							{
+								from = "phystop.vmat"
+								to = "cars/digby_voyager/materials/digby_voyager.vmat"
+							},
+						]
 						use_global_default = false
 						global_default_material = ""
 					},
@@ -39,6 +53,9 @@
 								"Plane_003",
 								"Plane_001",
 								"Car_001",
+								"Car",
+								"Phys",
+								"PhysTop",
 							]
 						}
 					},
