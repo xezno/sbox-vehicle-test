@@ -5,7 +5,7 @@ public sealed class ColorPicker : Component
 	[RequireComponent] public ModelRenderer ModelRenderer { get; set; }
 	[Property] public Color[] Colors { get; set; }
 
-	[HostSync( Query = true )] public Color CurrentColor { get; set; }
+	[Sync( SyncFlags.FromHost | SyncFlags.Query )] public Color CurrentColor { get; set; }
 
 	protected override void OnEnabled()
 	{

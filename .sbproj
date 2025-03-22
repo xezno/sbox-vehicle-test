@@ -8,7 +8,7 @@
   "Resources": null,
   "PackageReferences": [],
   "EditorReferences": null,
-  "IsWhitelistDisabled": false,
+  "IsStandaloneOnly": false,
   "Metadata": {
     "MaxPlayers": 64,
     "MinPlayers": 1,
@@ -27,71 +27,6 @@
     "ControlModes": {
       "Keyboard": true,
       "Gamepad": true
-    },
-    "InputSettings": {
-      "Actions": [
-        {
-          "Name": "Forward",
-          "KeyboardCode": "W",
-          "GamepadCode": "RightTrigger",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Backward",
-          "KeyboardCode": "S",
-          "GamepadCode": "LeftTrigger",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Left",
-          "KeyboardCode": "A",
-          "GamepadCode": "None",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "Right",
-          "KeyboardCode": "D",
-          "GamepadCode": "None",
-          "GroupName": "Movement"
-        },
-        {
-          "Name": "View",
-          "KeyboardCode": "C",
-          "GamepadCode": "RightJoystickButton",
-          "GroupName": "Other"
-        },
-        {
-          "Name": "Voice",
-          "KeyboardCode": "v",
-          "GamepadCode": "None",
-          "GroupName": "Other"
-        },
-        {
-          "Name": "Score",
-          "KeyboardCode": "tab",
-          "GamepadCode": "SwitchLeftMenu",
-          "GroupName": "Other"
-        },
-        {
-          "Name": "Chat",
-          "KeyboardCode": "enter",
-          "GamepadCode": "None",
-          "GroupName": "Other"
-        },
-        {
-          "Name": "GearUp",
-          "KeyboardCode": "E",
-          "GamepadCode": "None",
-          "GroupName": "Gears"
-        },
-        {
-          "Name": "GearDown",
-          "KeyboardCode": "Q",
-          "GamepadCode": "None",
-          "GroupName": "Gears"
-        }
-      ],
-      "__guid": "0ef2a792-ba46-4785-9169-eb9d53f2cc21"
     },
     "LaunchMode": "QuickPlay"
   }

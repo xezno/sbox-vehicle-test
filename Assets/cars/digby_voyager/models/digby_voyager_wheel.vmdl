@@ -43,6 +43,7 @@
 							exception_list = 
 							[
 								"Cylinder_002",
+								"Wheel",
 							]
 						}
 					},
